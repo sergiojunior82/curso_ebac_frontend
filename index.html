@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <title>Meus Jogos Inesqueciveis</title>
+  <style>
+    .navbar-nav .nav-link-active {
+      color: #fff;
+    }
+    .nav-link {
+      text-align: center;
+    }
+    #cabecalho {
+      position: sticky;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      z-index: 1000;
+    }
+
+    #inicio {
+      padding-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="cabecalho">
+    <div class="navbar navbar-expand-lg">
+      <div class="container">
+        <img class="w-25" src="./assets/logo.png" alt="">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="nav navbar-nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#jogos">Jogos</a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page" data-bs-spy="scroll" data-bs-target="#cabecalho">
+      <div id="inicio" class="container">
+        <div  class="carousel carousel-fade-slide w-75 h-100 mx-auto" id="carousel-gremio" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+              <img class="d-block w-100 mx-auto border border-dark" src="./assets/01.jpg" alt="">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+              <img class="d-block w-100 mx-auto border border-dark" src="./assets/02.jpg" alt="">
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+              <img class="d-block w-100 mx-auto border border-dark" src="./assets/03.jpg" alt="">
+            </div>
+          </div>
+          <button
+            data-bs-target="#carousel-gremio"
+            data-bs-slide="prev"
+            class="carousel-control-prev"
+            type="button"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            data-bs-target="#carousel-gremio"
+            data-bs-slide="next"
+            type="button"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button class="active" type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+          </div>
+        </div>
+      </div>
+      <h1 class="text-center my-5">Meus Jogos Inesqueciveis</h1>
+      <div class="container">
+        <div class="row">
+          <div id="jogos" class="col-lg-4 col-md-6 col-som-12 d-flex justify-content-center my-4">
+            <article class="card">
+              <header class="card-header">
+                Libertadores 1995
+              </header>
+              <img class="d-block w-100 h-100" src="./assets/jg01.jpeg" alt="Gremio x Palmeiras - LA 1995">
+              <div class="card-body">
+                <h4 class="card-title">Grêmio 5x0 Palmeiras</h4>
+                <p class="card-text">
+                  Em 1995, pela Libertadores, o Grêmio derrotou o Palmeiras por um impressionante placar de 5 a 0, em uma das maiores vitórias da história do torneio sul-americano. 
+                  Esse resultado icônico marcou a trajetória vitoriosa do Grêmio na competição, culminando com o título da Libertadores daquele ano.
+                </p>
+                <a href="#" class="btn btn-primary">Jogo no Completo</a>
+              </div>  
+              <footer class="card-footer">
+                Data do jogo 18/05/1995
+              </footer>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 col-som-12 d-flex justify-content-center my-4">
+            <article class="card">
+              <header class="card-header">
+                Libertadores 1995
+              </header>
+              <img class="d-block w-100 h-100" src="./assets/jg02.jpg" alt="Gremio x Palmeiras - LA 1995">
+              <div class="card-body">
+                <h4 class="card-title">Atlético Nacional 1x1 Grêmio</h4>
+                <p class="card-text">
+                  No segundo jogo da final da Copa Libertadores de 1995, o Grêmio empatou em 1 a 1 com o Atlético Nacional, em Medellín, na Colômbia. 
+                  O empate assegurou o título para o Grêmio, que já havia vencido o jogo de ida por 3 a 1, tornando-se campeão da Libertadores naquele ano.
+                </p>
+                <a href="#" class="btn btn-primary">Jogo no Completo</a>
+              </div>  
+              <footer class="card-footer">
+                Data do jogo 26/07/1995
+              </footer>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6 col-som-12 d-flex justify-content-center my-4">
+            <article class="card">
+              <header class="card-header">
+                Copa do Brasil 2001
+              </header>
+              <img class="d-block w-100 h-100" src="./assets/jg03.jpg" alt="Gremio x Palmeiras - LA 1995">
+              <div class="card-body">
+                <h4 class="card-title">Corinthians 1x3 Grêmio</h4>
+                <p class="card-text">
+                  No jogo de volta da final da Copa do Brasil de 2001, realizado no Estádio do Morumbi, o Grêmio venceu o Corinthians por 3 a 1, conquistando o título com um placar agregado de 5 a 3. 
+                  Essa vitória marcou um dos momentos mais importantes da história do clube gaúcho no torneio.
+                </p>
+                <a href="#" class="btn btn-primary">Jogo no Completo</a>
+              </div>  
+              <footer class="card-footer">
+                Data do jogo 18/07/2001
+              </footer>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
